@@ -1230,6 +1230,8 @@ public class ChunkProtection
 			accessorId = accessor.getUUID();
 		}
 
+		if (oldChunk == null) return false;
+
 		if(fromClaim == null)
 			fromClaim = claimsManager.get(dim, oldChunk.x(), oldChunk.z());
 
